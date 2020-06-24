@@ -1,0 +1,5 @@
+primitive type function doc link : https://yehudakatz.com/2011/08/11/understanding-javascript-function-invocation-and-this/
+arrow function doc link : https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Functions/%EC%95%A0%EB%A1%9C%EC%9A%B0_%ED%8E%91%EC%85%98
+요약
+function 에서는 this를 함수 객체 자기 자신으로 정의하고,
+화살표 함수는 this를 새로 정의하지 않는다.(바로 바깥의 함수 혹은 클래스임)

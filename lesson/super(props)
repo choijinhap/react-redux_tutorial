@@ -1,0 +1,8 @@
+doc link : https://velog.io/@honeysuckle/%EB%B2%88%EC%97%AD-Dan-Abramov-%EC%99%9C-superprops-%EB%A5%BC-%EC%9E%91%EC%84%B1%ED%95%B4%EC%95%BC-%ED%95%98%EB%8A%94%EA%B0%80
+
+자바스크립트에서 super는 부모 클래스 생성자를 가르킨다 리액트에서는 React.component
+
+super(props)선언 전까지 this를 사용할수 없다.
+
+this와 props를 논리적으로 올바른 순서로 할당하여 사용하기 위해
+꼭처음에 super(props)를 사용해주자

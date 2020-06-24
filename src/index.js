@@ -11,7 +11,8 @@ class Square extends React.Component {
     }
     render() {
       return (
-        // <button className="square" onClick={function(){alert( "click"+this.props.value );}}> 
+        //  <button className="square" onClick={function(){alert( "click"+this.props.value );}}> 
+        //  </button>
         // fucntion과 화살표함수의 this가 다르다 
         <button 
         className="square" 
