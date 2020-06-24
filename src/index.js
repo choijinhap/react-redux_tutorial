@@ -2,25 +2,37 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import { throwStatement } from '@babel/types';
-class Square extends React.Component {
-    constructor(props){
-        super(props);
-    }
-    render() {
-      return (
-        //  <button className="square" onClick={function(){alert( "click"+this.props.value );}}> 
-        //  </button>
-        // fucntion과 화살표함수의 this가 다르다 
-        <button 
-        className="square" 
-        onClick={() => {this.props.onClick()}}
-        >
-          {this.props.value}
-        </button>
+// class Square extends React.Component {
+//     constructor(props){
+//         super(props);
+//     }
+//     render() {
+//       return (
+//         //  <button className="square" onClick={function(){alert( "click"+this.props.value );}}> 
+//         //  </button>
+//         // fucntion과 화살표함수의 this가 다르다 
+//         <button 
+//         className="square" 
+//         onClick={() => {this.props.onClick()}}
+//         >
+//           {this.props.value}
+//         </button>
+//       );
+//     }
+//   }
+
+//function component로 바꾸기
+//state를 가질 필요가 없는 component는 function으로 정의하면 훨씬 간결하다.
+  function Square(props){
+      return(
+          <button 
+          className="square"
+            onClick={props.onClick}
+            >
+                {props.value}
+            </button>
       );
-    }
   }
-  
   class Board extends React.Component {
       constructor(props){
           super(props);
